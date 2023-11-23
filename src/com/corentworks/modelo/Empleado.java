@@ -68,12 +68,13 @@ public class Empleado implements Comparable{
         if (o instanceof Empleado){
             parametro=(Empleado)o;
         }
-        if (sueldo>parametro.getSueldo()){
+        return nombre.compareTo(parametro.getNombre());//para Strings usar este.
+        /*if (sueldo>parametro.getSueldo()){
             return -1;
         } else if (sueldo== parametro.getSueldo()){
           return 0;
         }else {
             return 1;
         }
-    }
+    */}
 }
